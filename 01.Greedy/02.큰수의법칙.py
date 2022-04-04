@@ -1,8 +1,6 @@
 # n : 배열을 크기 (2번째 입력 줄)
 # m : 숫자가 더해지는 횟수
 # k : 같은 index의 덧셈의 max 반복 횟수
-from socket import send_fds
-
 
 n, m, k = map(int, input().split())
 
@@ -19,7 +17,7 @@ inc = 0
 
 for i in range(m):
     inc += 1
-    if (inc + 1) == k:
+    if inc == k:
         inc = 0
         sum += second2max
     else:
